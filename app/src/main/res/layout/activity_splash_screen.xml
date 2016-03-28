@@ -5,14 +5,15 @@
     android:background="#fffce8"
     android:layout_gravity="center"
     android:id="@+id/linearLayoutSplash"
-    android:gravity="center"
     android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:id="@+id/textViewName"
-        android:textSize="80sp"
+        android:id="@+id/textViewTitle"
+        android:textSize="75sp"
         ></TextView>
+
+
 
 </LinearLayout>
