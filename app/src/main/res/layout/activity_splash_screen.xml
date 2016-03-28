@@ -4,15 +4,14 @@
     android:layout_height="fill_parent"
     android:background="#fffce8"
     android:layout_gravity="center"
-    android:id="@+id/lin_lay"
-    android:gravity="center"
+    android:id="@+id/linearLayoutSplash"
     android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WI-QUIZ"
-        android:id="@+id/dd"
-        android:textSize="80sp"
+        android:text="@string/app_name"
+        android:id="@+id/textViewTitle"
+        android:textSize="70sp"
         ></TextView>
 
 
