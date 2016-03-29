@@ -37,6 +37,7 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
         ((QuizMode) context).setQuestion(ques);
 
         holder.answer.setText(response.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray().get(position));
+
         holder.root.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

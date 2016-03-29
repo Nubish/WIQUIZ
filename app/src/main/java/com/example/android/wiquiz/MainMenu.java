@@ -3,11 +3,11 @@ package com.example.android.wiquiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ProfileSetup extends AppCompatActivity {
+public class MainMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_setup);
+        setContentView(R.layout.activity_main_menu);
     }
 }
