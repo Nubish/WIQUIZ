@@ -17,26 +17,31 @@ public class SplashScreen extends Activity {
         Window window = getWindow();
         window.setFormat(PixelFormat.RGBA_8888);
     }
-    /** Called when the activity is first created. */
+
+    /**
+     * Called when the activity is first created.
+     */
     Thread splashThread;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         StartAnimations();
     }
+
     private void StartAnimations() {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.alpha);
         animation.reset();
-        LinearLayout l=(LinearLayout) findViewById(R.id.linearLayoutSplash);
-        l.clearAnimation();
-        l.startAnimation(animation);
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.lin_lay);
+        linearLayout.clearAnimation();
+        linearLayout.startAnimation(animation);
 
         animation = AnimationUtils.loadAnimation(this, R.anim.translate);
         animation.reset();
-//        TextView iv = (TextView) findViewById(R.id.textViewName);
-//        iv.clearAnimation();
-//        iv.startAnimation(animation);
+        TextView textView = (TextView) findViewById(R.id.dd);
+        textView.clearAnimation();
+        textView.startAnimation(animation);
 
         splashThread = new Thread() {
             @Override
@@ -48,7 +53,7 @@ public class SplashScreen extends Activity {
                         sleep(100);
                         waited += 100;
                     }
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this,ProfileSetup.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     SplashScreen.this.finish();
