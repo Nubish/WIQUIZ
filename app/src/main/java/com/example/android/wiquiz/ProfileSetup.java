@@ -1,6 +1,7 @@
 package com.example.android.wiquiz;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +42,8 @@ public class ProfileSetup extends AppCompatActivity implements View.OnClickListe
             editor.putString("userName", nameEditText.getText().toString());
             editor.commit();
             Toast.makeText(this, "Profile Created", Toast.LENGTH_SHORT).show();
+            Intent intent= new Intent(ProfileSetup.this,MainMenu.class);
+            startActivity(intent);
         }
     }
 

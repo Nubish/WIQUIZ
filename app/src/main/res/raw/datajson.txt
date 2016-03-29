@@ -1,62 +1,159 @@
 {
-  "CategoriesArray":
-              [
-                {
-                "CategoryName":"GK",
-                 "Question":
-                              [
-                                {
-                                  "QuestionId":"001",
-                                  "Problem":"Who is PM ?",
-                                  "AnswerArray":[
-                                             "ManMohan Ji",
-                                             "Sonia",
-                                             "Rahul",
-                                             "Modi"
-                                            ],
-                                  "CorrectAnswer":"Modi"
-                                },
-                                {
-                                  "QuestionId":"002",
-                                  "Problem":"Who is Prez ?",
-                                  "AnswerArray":[
-                                              "Manas Ji",
-                                              "Shub",
-                                              "mridul",
-                                              "shubmoy"
-                                            ],
-                                  "CorrectAnswer":"Shubmoy"
-                                }
-                              ]
-                },
-                {
-                  "CategoryName":"iq",
-                  "Question":
-                               [
-                                {
-                                  "QuestionId":"003",
-                                  "Problem":"Who is PM ?",
-                                  "AnswerArray":[
-                                             "ManMohan Ji",
-                                             "Sonia",
-                                             "Rahul",
-                                             "Modi"
-                                            ],
-                                  "CorrectAnswer":"Modi"
-                                },
-                                {
-                                  "QuestionId":"004",
-                                  "Problem":"Who is Prez ?",
-                                  "AnswerArray":[
-                                              "Manas Ji",
-                                              "Shub",
-                                              "mridul",
-                                              "shubmoy"
-                                            ],
-                                  "CorrectAnswer":"Shubmoy"
-                                }
-                              ]
-                }
-              ]
-  
+  "CategoriesArray": [
+    {
+      "CategoryName": "GK",
+      "Question": [
+        {
+          "QuestionId": "001",
+          "Problem": "Entomology is the science that studies",
+          "AnswerArray": [
+            "Behavior of human beings",
+            "Insects",
+            "The origin and history of technical and scientific terms",
+            "The formation of rocks"
+          ],
+          "CorrectAnswer": "Insects"
+        },
+        {
+          "QuestionId": "002",
+          "Problem": "Garampani sanctuary is located at ?",
+          "AnswerArray": [
+            "Junagarh, Gujarat",
+            "Diphu, Assam",
+            "Kohima, Nagaland",
+            "Gangtok, Sikkim"
+          ],
+          "CorrectAnswer": "Diphu, Assam"
+        },
+         { "QuestionId": "003",
+          "Problem": "Prez ?",
+          "AnswerArray": [
+            "Manas",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        },
+        { "QuestionId": "003",
+          "Problem": "Prez ?",
+          "AnswerArray": [
+            "Manas",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        }
+      ]
+    },
+    {
+      "CategoryName": "Sports",
+      "Question": [
+        {
+          "QuestionId": "001",
+          "Problem": "Who is PM ?",
+          "AnswerArray": [
+            "ManMohan Ji",
+            "Sonia",
+            "Rahul",
+            "Modi"
+          ],
+          "CorrectAnswer": "Modi"
+        },
+        {
+          "QuestionId": "002",
+          "Problem": "Who is Prez ?",
+          "AnswerArray": [
+            "Manas Ji",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        }
+      ]
+    },
+    {
+      "CategoryName": "Entertainment",
+      "Question": [
+        {
+          "QuestionId": "003",
+          "Problem": "Who is PM ?",
+          "AnswerArray": [
+            "ManMohan Ji",
+            "Sonia",
+            "Rahul",
+            "Modi"
+          ],
+          "CorrectAnswer": "Modi"
+        },
+        {
+          "QuestionId": "004",
+          "Problem": "Who is Prez ?",
+          "AnswerArray": [
+            "Manas Ji",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        }
+      ]
+    },
+    {
+      "CategoryName": "History",
+      "Question": [
+        {
+          "QuestionId": "001",
+          "Problem": "Who is PM ?",
+          "AnswerArray": [
+            "ManMohan Ji",
+            "Sonia",
+            "Rahul",
+            "Modi"
+          ],
+          "CorrectAnswer": "Modi"
+        },
+        {
+          "QuestionId": "002",
+          "Problem": "Who is Prez ?",
+          "AnswerArray": [
+            "Manas Ji",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        }
+      ]
+    },
+    {
+      "CategoryName": "Sci-Tech",
+      "Question": [
+        {
+          "QuestionId": "001",
+          "Problem": "Who is PM ?",
+          "AnswerArray": [
+            "ManMohan Ji",
+            "Sonia",
+            "Rahul",
+            "Modi"
+          ],
+          "CorrectAnswer": "Modi"
+        },
+        {
+          "QuestionId": "002",
+          "Problem": "Who is Prez ?",
+          "AnswerArray": [
+            "Manas Ji",
+            "Shub",
+            "mridul",
+            "shubmoy"
+          ],
+          "CorrectAnswer": "Shubmoy"
+        }
+      ]
+    }
+  ]
 }

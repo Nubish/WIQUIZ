@@ -8,10 +8,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/profile_setup_background"
-    android:id="@+id/id2">
+    android:id="@+id/relativeLayoutMainMenu">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPlay"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/t10"
@@ -21,52 +21,52 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonAddCategory"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout="@id/button2"
+        android:layout="@id/buttonPlay"
         android:text="@string/t8"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
         android:layout_marginBottom="32dp"
-        android:layout_above="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:layout_above="@+id/buttonPlay"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:layout_toEndOf="@+id/buttonPlay" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonShareCategory"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/t9"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
+        android:layout_alignLeft="@+id/buttonAddCategory"
+        android:layout_alignStart="@+id/buttonAddCategory"
         android:layout_marginBottom="35dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonEditProfile"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/t7"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
         android:paddingBottom="5dp"
-        android:layout_alignTop="@+id/button3"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_alignTop="@+id/buttonAddCategory"
+        android:layout_toLeftOf="@+id/buttonPlay"
+        android:layout_toStartOf="@+id/buttonPlay" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonQuit"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/t11"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_alignTop="@+id/buttonShareCategory"
+        android:layout_toLeftOf="@+id/buttonPlay"
+        android:layout_toStartOf="@+id/buttonPlay" />
 
 
 </RelativeLayout>
