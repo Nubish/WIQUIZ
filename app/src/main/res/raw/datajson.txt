@@ -1,55 +1,59 @@
 {
-  "categoriesArray":
+  "CategoriesArray":
               [
                 {
-                "category":"GK",
-                 "question":
+                "CategoryName":"GK",
+                 "Question":
                               [
                                 {
-                                  "problem":"Who is PM ?",
-                                  "answerArray":[
+                                  "QuestionId":"001",
+                                  "Problem":"Who is PM ?",
+                                  "AnswerArray":[
                                              "ManMohan Ji",
                                              "Sonia",
                                              "Rahul",
                                              "Modi"
                                             ],
-                                  "correctAnswer":"Modi"
+                                  "CorrectAnswer":"Modi"
                                 },
                                 {
-                                  "problem":"Who is Prez ?",
-                                  "answerArray":[
+                                  "QuestionId":"002",
+                                  "Problem":"Who is Prez ?",
+                                  "AnswerArray":[
                                               "Manas Ji",
                                               "Shub",
                                               "mridul",
                                               "shubmoy"
                                             ],
-                                  "correctAnswer":"Shubmoy"
+                                  "CorrectAnswer":"Shubmoy"
                                 }
                               ]
                 },
                 {
-                  "category":"iq",
-                  "question":
+                  "CategoryName":"iq",
+                  "Question":
                                [
                                 {
-                                  "problem":"Who is PM ?",
-                                  "answerArray":[
+                                  "QuestionId":"003",
+                                  "Problem":"Who is PM ?",
+                                  "AnswerArray":[
                                              "ManMohan Ji",
                                              "Sonia",
                                              "Rahul",
                                              "Modi"
                                             ],
-                                  "correctAnswer":"Modi"
+                                  "CorrectAnswer":"Modi"
                                 },
                                 {
-                                  "problem":"Who is Prez ?",
-                                  "answerArray":[
+                                  "QuestionId":"004",
+                                  "Problem":"Who is Prez ?",
+                                  "AnswerArray":[
                                               "Manas Ji",
                                               "Shub",
                                               "mridul",
                                               "shubmoy"
                                             ],
-                                  "correctAnswer":"Shubmoy"
+                                  "CorrectAnswer":"Shubmoy"
                                 }
                               ]
                 }
