@@ -4,10 +4,13 @@ import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import static com.example.android.wiquiz.GetRandomNumberFromRange.getRandom;
 
 
 /**
@@ -16,11 +19,13 @@ import android.widget.TextView;
 public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.CustomViewholder> {
 
     private Context context;
-    private Response response;
+    private Response.CategoriesArray responseCategoriesArray;
+    private int category;
 
-    public CustomQuizAdapter(Context context, Response response) {
+    public CustomQuizAdapter(Context context, Response.CategoriesArray responseCategoriesArray, int category) {
         this.context = context;
-        this.response = response;
+        this.responseCategoriesArray = responseCategoriesArray;
+        this.category=category;
     }
 
     @Override
@@ -32,11 +37,14 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
     @Override
     public void onBindViewHolder(final CustomViewholder holder, int position) {
 
-        String ques = response.getCategoriesArray().get(0).getQuestion().get(0).getProblem();
-        final String correct = response.getCategoriesArray().get(0).getQuestion().get(0).getCorrectAnswer();
+        int randomQuestion=getRandom(1, responseCategoriesArray.getQuestion().size());
+        Log.d("size",""+randomQuestion);
+
+        String ques = responseCategoriesArray.getQuestion().get(randomQuestion).getProblem();
+        final String correct = responseCategoriesArray.getQuestion().get(randomQuestion).getCorrectAnswer();
         ((QuizMode) context).setQuestion(ques);
 
-        holder.answer.setText(response.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray().get(position));
+        holder.answer.setText(responseCategoriesArray.getQuestion().get(randomQuestion).getAnswerArray().get(position));
 
         holder.root.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +62,7 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
 
     @Override
     public int getItemCount() {
-        return response.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray().size();
+        return responseCategoriesArray.getQuestion().get(0).getAnswerArray().size();
     }
 
     static class CustomViewholder extends RecyclerView.ViewHolder {

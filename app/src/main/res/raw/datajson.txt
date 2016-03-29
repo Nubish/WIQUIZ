@@ -2,9 +2,10 @@
   "CategoriesArray": [
     {
       "CategoryName": "GK",
+      "CategoryId": "1",
       "Question": [
         {
-          "QuestionId": "001",
+          "QuestionId": "1001",
           "Problem": "Entomology is the science that studies",
           "AnswerArray": [
             "Behavior of human beings",
@@ -15,7 +16,7 @@
           "CorrectAnswer": "Insects"
         },
         {
-          "QuestionId": "002",
+          "QuestionId": "1002",
           "Problem": "Garampani sanctuary is located at ?",
           "AnswerArray": [
             "Junagarh, Gujarat",
@@ -25,63 +26,111 @@
           ],
           "CorrectAnswer": "Diphu, Assam"
         },
-         { "QuestionId": "003",
-          "Problem": "Prez ?",
+        {
+          "QuestionId": "1003",
+          "Problem": "For which of the following disciplines is Nobel Prize awarded?",
           "AnswerArray": [
-            "Manas",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "Physics and Chemistry",
+            "Physiology or Medicine",
+            "Literature, Peace and Economics",
+            "All of the above"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "All of the above"
         },
-        { "QuestionId": "003",
-          "Problem": "Prez ?",
+        {
+          "QuestionId": "1004",
+          "Problem": "Who was the first Indian Chief of Army Staff of the Indian Army ?",
           "AnswerArray": [
-            "Manas",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "Gen. K.M. Cariappa",
+            "Vice-Admiral R.D. Katari",
+            "Gen. Maharaja Rajendra Singhji",
+            "None of the above"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "Gen. K.M. Cariappa"
+        },
+        {
+          "QuestionId": "1005",
+          "Problem": "For the Olympics and World Tournaments, the dimensions of basketball court are",
+          "AnswerArray": [
+            "26 m x 14 m",
+            "28 m x 15 m",
+            "27 m x 16 m",
+            "28 m x 16 m"
+          ],
+          "CorrectAnswer": "28 m x 15 m"
+        },
+        {
+          "QuestionId": "1006",
+          "Problem": "GNLF stands for",
+          "AnswerArray": [
+            "Gorkha National Liberation Front",
+            "Gross National Liberation Form",
+            "Both option A and B",
+            "None of the above"
+          ],
+          "CorrectAnswer": "Gorkha National Liberation Front"
         }
       ]
     },
     {
       "CategoryName": "Sports",
+      "CategoryId": "2",
       "Question": [
         {
-          "QuestionId": "001",
-          "Problem": "Who is PM ?",
+          "QuestionId": "2001",
+          "Problem": "Who was the first Indian to win the World Amateur Billiards title?",
           "AnswerArray": [
-            "ManMohan Ji",
-            "Sonia",
-            "Rahul",
-            "Modi"
+            "Geet Sethi",
+            "Wilson Jones",
+            "Michael Ferreira",
+            "Manoj Kothari"
           ],
-          "CorrectAnswer": "Modi"
+          "CorrectAnswer": "Wilson Jones"
         },
         {
-          "QuestionId": "002",
-          "Problem": "Who is Prez ?",
+          "QuestionId": "2002",
+          "Problem": "'Dizzy' is the nickname of what Australian player?",
           "AnswerArray": [
-            "Manas Ji",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "Adam Gilchrist",
+            "Jason Gillespie",
+            "Glenn McGrath",
+            "Brett Lee"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "Jason Gillespie"
+        },
+        {
+          "QuestionId": "2003",
+          "Problem": "Who was the 1st president of BCCI ( Board of Control for Cricket in India )?",
+          "AnswerArray": [
+            "R.E. Grant Govan",
+            "Dr. Maharajkumar Sir Vijaya Ananda",
+            "Sikandar Hyat Khan",
+            "Anthony S. D'Mello"
+          ],
+          "CorrectAnswer": "R.E. Grant Govan"
+        },
+        {
+          "QuestionId": "2004",
+          "Problem": "Who was the 1st ODI captain for India?",
+          "AnswerArray": [
+            "Ajit Wadekar",
+            "Bishen Singh Bedi",
+            "Nawab Pataudi",
+            "Vinoo Mankad"
+          ],
+          "CorrectAnswer": "Ajit Wadekar"
         }
       ]
     },
     {
       "CategoryName": "Entertainment",
+      "CategoryId": "3",
       "Question": [
         {
-          "QuestionId": "003",
-          "Problem": "Who is PM ?",
+          "QuestionId": "3001",
+          "Problem": "Who",
           "AnswerArray": [
-            "ManMohan Ji",
+            "ManMohan",
             "Sonia",
             "Rahul",
             "Modi"
@@ -89,69 +138,126 @@
           "CorrectAnswer": "Modi"
         },
         {
-          "QuestionId": "004",
-          "Problem": "Who is Prez ?",
+          "QuestionId": "3002",
+          "Problem": "Who",
           "AnswerArray": [
-            "Manas Ji",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "ManMohan",
+            "Sonia",
+            "Rahul",
+            "Modi"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "Modi"
         }
       ]
     },
     {
       "CategoryName": "History",
+      "CategoryId": "4",
       "Question": [
         {
-          "QuestionId": "001",
-          "Problem": "Who is PM ?",
+          "QuestionId": "4001",
+          "Problem": "Where did British first open their factories in Eastern part of India?",
           "AnswerArray": [
-            "ManMohan Ji",
-            "Sonia",
-            "Rahul",
-            "Modi"
+            "Assam",
+            "Orissa",
+            "Bihar",
+            "Sikim"
           ],
-          "CorrectAnswer": "Modi"
+          "CorrectAnswer": "Orissa"
         },
         {
-          "QuestionId": "002",
-          "Problem": "Who is Prez ?",
+          "QuestionId": "4002",
+          "Problem": "when East India Company was came into existence, England was ruled by",
           "AnswerArray": [
-            "Manas Ji",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "Hanovarians",
+            "Stuarts",
+            "Normans",
+            "None of the above"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "Normans"
+        },
+        {
+          "QuestionId": "4003",
+          "Problem": "In Bengal, the headquarters of East India Company were located at",
+          "AnswerArray": [
+            "Fort St David",
+            "Fort William",
+            "Fort St George",
+            "None of the above"
+          ],
+          "CorrectAnswer": "Fort William"
+        },
+        {
+          "QuestionId": "4004",
+          "Problem": "Goa was captured by Portuguese",
+          "AnswerArray": [
+            "1479",
+            "1575",
+            "1510",
+            "1600"
+          ],
+          "CorrectAnswer": "1510"
         }
       ]
     },
     {
       "CategoryName": "Sci-Tech",
+      "CategoryId": "5",
       "Question": [
         {
-          "QuestionId": "001",
-          "Problem": "Who is PM ?",
+          "QuestionId": "5001",
+          "Problem": "Where is the Central Rice Reseach Institute located",
           "AnswerArray": [
-            "ManMohan Ji",
-            "Sonia",
-            "Rahul",
-            "Modi"
+            "Bengaluru",
+            "Kanpur",
+            "Coimbator",
+            "Cuttuck"
           ],
-          "CorrectAnswer": "Modi"
+          "CorrectAnswer": "Kanpur"
         },
         {
-          "QuestionId": "002",
-          "Problem": "Who is Prez ?",
+          "QuestionId": "5002",
+          "Problem": "Who constructed the 'Jantar Mantar' in Jaipur",
           "AnswerArray": [
-            "Manas Ji",
-            "Shub",
-            "mridul",
-            "shubmoy"
+            "Ram Singh",
+            "Man Singh I",
+            "Rana Sanga",
+            "Jai Singh II"
           ],
-          "CorrectAnswer": "Shubmoy"
+          "CorrectAnswer": "Jai Singh II"
+        },
+        {
+          "QuestionId": "5003",
+          "Problem": "Which one is India's first operational remote sensing satellite",
+          "AnswerArray": [
+            "IRS-1A",
+            "INSAT-1A",
+            "GSAT-1",
+            "PSLV-D3"
+          ],
+          "CorrectAnswer": "IRS-1A"
+        },
+        {
+          "QuestionId": "5004",
+          "Problem": "Which one is India's first satellite exclusively used for educational purpose",
+          "AnswerArray": [
+            "SARAL",
+            "RISAT-1",
+            "HAMSAT",
+            "EDUSAT"
+          ],
+          "CorrectAnswer": "EDUSAT"
+        },
+        {
+          "QuestionId": "5005",
+          "Problem": "Which one is India's First Indigenous Satellite Launch Vehicle",
+          "AnswerArray": [
+            "PSLV",
+            "ASLV",
+            "GSLV",
+            "SLV-3"
+          ],
+          "CorrectAnswer": "SLV-3"
         }
       ]
     }

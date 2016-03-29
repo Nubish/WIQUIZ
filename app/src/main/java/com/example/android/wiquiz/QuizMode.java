@@ -7,12 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
+import static com.example.android.wiquiz.GetRandomNumberFromRange.getRandom;
 
 public class QuizMode extends AppCompatActivity {
 
@@ -51,11 +54,17 @@ public class QuizMode extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        int r=getRandom(0,5);
+        String categoryString="1";
+        int category=Integer.parseInt(categoryString);
+
 
         gson = new Gson();
         responseobj = gson.fromJson(data, Response.class);
         //answers=responseobj.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray();
-        recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj));
+        //recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj));
+        recyclerView.setAdapter(new CustomQuizAdapter(context,responseobj.getCategoriesArray().get(category),category));
+
     }
 
     public void setQuestion(String ques) {
