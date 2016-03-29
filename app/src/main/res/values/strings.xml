@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Start</string>
+    <string name="app_name">WIQUIZ</string>
     <string name="action_settings">Settings</string>
     <string name="Introduce_Yourself">Introduce Yourself</string>
     <string name="Next">Next</string>
-    <string name="WI-QUIZ">WI-QUIZ</string>
+    <string name="WI_QUIZ">WI-QUIZ</string>
     <string name="t1">NAME:</string>
     <string name="t2">Enter Name</string>
     <string name="t3">GENDER:</string>

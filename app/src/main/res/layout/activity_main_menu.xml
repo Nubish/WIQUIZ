@@ -8,10 +8,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/profile_setup_background"
-    android:id="@+id/id2">
+    android:id="@+id/relativeLayoutMainMenu">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPlay"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -21,12 +21,12 @@
         />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonAddCategory"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout="@id/button2"
-        android:layout_below="@id/button2"
+        android:layout="@id/buttonPlay"
+        android:layout_below="@id/buttonPlay"
         android:text="@string/t8"
         android:textColor="#FFFFFF"
         android:layout_marginTop="35dp"
@@ -34,11 +34,11 @@
         />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonShareCategory"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/button3"
+        android:layout_below="@id/buttonAddCategory"
         android:text="@string/t9"
         android:textColor="#FFFFFF"
         android:layout_marginTop="35dp"
@@ -46,11 +46,11 @@
         />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonEditProfile"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/button4"
+        android:layout_below="@id/buttonShareCategory"
         android:text="@string/t7"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
@@ -59,11 +59,11 @@
         />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonQuit"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/button5"
+        android:layout_below="@id/buttonEditProfile"
         android:text="@string/t11"
         android:textColor="#FFFFFF"
         android:layout_marginTop="35dp"
