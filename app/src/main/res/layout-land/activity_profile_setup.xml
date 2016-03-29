@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Introduce Yourself"
+        android:text="@string/Introduce_Yourself"
         android:id="@+id/textview4"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -35,7 +35,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/Next"
         android:textColor="#FFFFFF"
         android:textStyle="normal"
         android:textSize="25sp"
