@@ -1,0 +1,58 @@
+{
+  "categoriesArray":
+              [
+                {
+                "category":"GK",
+                 "question":
+                              [
+                                {
+                                  "problem":"Who is PM ?",
+                                  "answerArray":[
+                                             "ManMohan Ji",
+                                             "Sonia",
+                                             "Rahul",
+                                             "Modi"
+                                            ],
+                                  "correctAnswer":"Modi"
+                                },
+                                {
+                                  "problem":"Who is Prez ?",
+                                  "answerArray":[
+                                              "Manas Ji",
+                                              "Shub",
+                                              "mridul",
+                                              "shubmoy"
+                                            ],
+                                  "correctAnswer":"Shubmoy"
+                                }
+                              ]
+                },
+                {
+                  "category":"iq",
+                  "question":
+                               [
+                                {
+                                  "problem":"Who is PM ?",
+                                  "answerArray":[
+                                             "ManMohan Ji",
+                                             "Sonia",
+                                             "Rahul",
+                                             "Modi"
+                                            ],
+                                  "correctAnswer":"Modi"
+                                },
+                                {
+                                  "problem":"Who is Prez ?",
+                                  "answerArray":[
+                                              "Manas Ji",
+                                              "Shub",
+                                              "mridul",
+                                              "shubmoy"
+                                            ],
+                                  "correctAnswer":"Shubmoy"
+                                }
+                              ]
+                }
+              ]
+  
+}
