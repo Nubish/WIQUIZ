@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">WIQUIZ</string>
+    <string name="app_name">Start</string>
+    <string name="action_settings">Settings</string>
+    <string name="Introduce_Yourself">Introduce Yourself</string>
+    <string name="Next">Next</string>
+    <string name="WI-QUIZ">WI-QUIZ</string>
+    <string name="t1">NAME:</string>
+    <string name="t2">Enter Name</string>
+    <string name="t3">GENDER:</string>
+    <string name="t4">UPLOAD</string>
+    <string name="t5">MALE</string>
+    <string name="t6">FEMALE</string>
+
+    <string name="t7">EDIT PROFILE</string>
+    <string name="t8">ADD CATEGORY</string>
+    <string name="t9">SHARE CATEGORY</string>
+    <string name="t10">PLAY</string>
+    <string name="t11">QUIT</string>
+    <string name="t12">YES</string>
+    <string name="t13">NO</string>
+    <string name="t14">Which Mode You Wanna Play ??</string>
+    <string name="t15">SINGLE USER</string>
+    <string name="t16">MULTI-USER</string>
+    <string name="t17">CREATE SERVER</string>
+    <string name="t18">JOIN SERVER</string>
+    <string name="t19">SINGLE USER</string>
+    <string name="t20">MULTI-USER</string>
 </resources>
