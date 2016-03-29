@@ -34,9 +34,9 @@ public class SplashScreen extends Activity {
 
         animation = AnimationUtils.loadAnimation(this, R.anim.translate);
         animation.reset();
-        TextView iv = (TextView) findViewById(R.id.textViewName);
-        iv.clearAnimation();
-        iv.startAnimation(animation);
+//        TextView iv = (TextView) findViewById(R.id.textViewName);
+//        iv.clearAnimation();
+//        iv.startAnimation(animation);
 
         splashThread = new Thread() {
             @Override
