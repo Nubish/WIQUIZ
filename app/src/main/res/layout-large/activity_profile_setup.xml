@@ -14,14 +14,14 @@
         android:id="@+id/textview4"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:layout_marginBottom="44dp"
         android:layout_above="@+id/editText2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:hint="  Your name"
 
         android:id="@+id/editText2"
@@ -37,7 +37,7 @@
         android:text="Next"
         android:textColor="#FFFFFF"
         android:textStyle="normal"
-        android:textSize="30sp"
+        android:textSize="23sp"
         android:background="#99d3d3d3"
         android:id="@+id/button11"
         android:layout_marginBottom="60dp"
