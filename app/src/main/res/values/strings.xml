@@ -28,4 +28,11 @@
     <string name="quit_dialog_message">Are You Sure You Want To Exit?</string>
     <string name="Yes">Yes</string>
     <string name="No">No</string>
+    <string name="Random">Random</string>
+    <string name="GK">GK</string>
+    <string name="Sports">Sports</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="History">History</string>
+    <string name="Sci_tech">Sci-Tech</string>
+    <string name="ChooseCategory">Choose Category</string>
 </resources>
