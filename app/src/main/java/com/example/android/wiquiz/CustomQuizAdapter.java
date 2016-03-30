@@ -2,6 +2,7 @@ package com.example.android.wiquiz;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -26,15 +28,33 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
     private Context context;
     private Response response;
     private int category;
+    Response.CategoriesArray.Question ques;
 
     public CustomQuizAdapter(Context context, Response response, int category) {
         this.context = context;
         this.response = response;
         this.category = category;
         //  this.randomQuestion = getRandom(1, this.responseCategoriesArray.getQuestion().size());
-        //    Log.d("size", "" + randomQuestion);
+        //   Log.d("size", "" + randomQuestion);
+        Log.d("game", "maaa");
+        ques = getRandomQuestion(category);
 
     }
+
+    /*void increaseScore()
+    {
+        int score;
+        SharedPreferences sharedPreferences= context.getSharedPreferences("Score", Context.MODE_PRIVATE);
+
+        score = sharedPreferences.getInt("score",0);
+        score++;
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("score",score);
+        editor.commit();
+
+
+    }
+*/
 
     @Override
     public CustomViewholder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -46,7 +66,8 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
     public void onBindViewHolder(final CustomViewholder holder, int position) {
 
         //String ques = responseCategoriesArray.getQuestion().get(randomQuestion).getProblem();
-        Response.CategoriesArray.Question ques = getRandomQuestion(category);
+        //Response.CategoriesArray.Question ques = getRandomQuestion(category);
+        Log.d("game", "jwj");
 
         final String correct = ques.getCorrectAnswer().toString();
         ((QuizMode) context).setQuestion(ques.getProblem().toString());
@@ -60,13 +81,17 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
             public void onClick(View v) {
 
                 if (holder.answer.getText().toString().equals(correct)) {
-                    //    holder.root.setCardBackgroundColor(ContextCompat.getColor(context, R.color.correctAnswer));
-
+                    holder.root.setCardBackgroundColor(ContextCompat.getColor(context, R.color.correctAnswer));
+                    context.startActivity(new Intent(context, QuizMode.class));
+                    Score scoreobj=new Score();
+                    scoreobj.increaseScore(context);
                 } else {
-                    //  holder.root.setCardBackgroundColor(ContextCompat.getColor(context, R.color.wrongAnswer));*//**//*
+                    holder.root.setCardBackgroundColor(ContextCompat.getColor(context, R.color.wrongAnswer));
+                    Toast.makeText(context, "Wrong Answer", Toast.LENGTH_SHORT).show();
+                    context.startActivity(new Intent(context, ShowScore.class));
                 }
 
-                context.startActivity(new Intent(context, QuizMode.class));
+                //context.startActivity(new Intent(context, QuizMode.class));
 
 
             }
@@ -80,10 +105,10 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
         if (category == -1) {
             int randomCategory = getRandom(0, response.getCategoriesArray().size());
             int randomQuestion = getRandom(0, response.getCategoriesArray().get(randomCategory).getQuestion().size());
-            String questionId=response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getQuestionId().toString();
-            String problem=response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getProblem().toString();
-            List<String> answerArray=response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getAnswerArray();
-            String correctAnswer=response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getCorrectAnswer().toString();
+            String questionId = response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getQuestionId().toString();
+            String problem = response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getProblem().toString();
+            List<String> answerArray = response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getAnswerArray();
+            String correctAnswer = response.getCategoriesArray().get(randomCategory).getQuestion().get(randomQuestion).getCorrectAnswer().toString();
 
 
             ques.setQuestionId(questionId);
@@ -92,14 +117,14 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
             ques.setCorrectAnswer(correctAnswer);
 
 
-        }
-        else {
+        } else {
+            Log.d("game", "" + category);
             int randomQuestion = getRandom(0, response.getCategoriesArray().get(category).getQuestion().size());
-
-            String questionId=response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getQuestionId().toString();
-            String problem=response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getProblem().toString();
-            List<String> answerArray=response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getAnswerArray();
-            String correctAnswer=response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getCorrectAnswer().toString();
+            Log.d("game", "Q" + randomQuestion);
+            String questionId = response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getQuestionId().toString();
+            String problem = response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getProblem().toString();
+            List<String> answerArray = response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getAnswerArray();
+            String correctAnswer = response.getCategoriesArray().get(category).getQuestion().get(randomQuestion).getCorrectAnswer().toString();
 
 
             ques.setQuestionId(questionId);

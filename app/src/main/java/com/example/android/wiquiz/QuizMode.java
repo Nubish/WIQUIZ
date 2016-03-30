@@ -61,13 +61,14 @@ public class QuizMode extends AppCompatActivity {
         }
 
 
-        //int category = getCategory();
+        int category = getCategory();
+        Log.d("game",""+category);
 
         gson = new Gson();
         responseobj = gson.fromJson(data, Response.class);
         //answers=responseobj.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray();
         //recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj));
-        recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj, getCategory()));
+        recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj, category));
 
     }
 
