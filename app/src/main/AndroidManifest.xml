@@ -22,7 +22,9 @@
         <activity
             android:name=".ChooseCategory"
             android:label="Select Category" />
-        <activity android:name=".ShowScore"></activity>
+        <activity android:name=".ShowScore" />
+        <activity android:name=".AddCategory" />
+        <activity android:name=".EditProfile"></activity>
     </application>
 
 </manifest>
