@@ -10,7 +10,7 @@ public class GetRandomNumberFromRange {
 
     public static int getRandom(int Min,int Max)
     {
-        int randomNum=Min + (int)(Math.random() * ((Max - Min) + 1));
+        int randomNum= (int) (Min + (Math.random() * (Max - Min)));
         return randomNum;
     }
 }
