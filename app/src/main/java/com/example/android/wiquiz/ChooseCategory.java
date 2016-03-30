@@ -19,7 +19,7 @@ public class ChooseCategory extends AppCompatActivity implements View.OnClickLis
         randomButton = (Button) findViewById(R.id.buttonRandom);
         gkButton = (Button) findViewById(R.id.buttonGk);
         sportsButton = (Button) findViewById(R.id.buttonSports);
-        entertainmentButton = (Button) findViewById(R.id.buttonSports);
+        entertainmentButton = (Button) findViewById(R.id.buttonEntertainment);
         historyButton = (Button) findViewById(R.id.buttonHistory);
         sci_techButton = (Button) findViewById(R.id.buttonSci_Tech);
     }
@@ -44,9 +44,7 @@ public class ChooseCategory extends AppCompatActivity implements View.OnClickLis
 
         switch (v.getId()) {
             case R.id.buttonRandom: {
-                int k=getRandom(0,4);
-                saveCategory(k);
-                Log.d("size",""+k);
+                saveCategory(-1);
                 startActivity(new Intent(this, QuizMode.class));
                 break;
             }
@@ -79,11 +77,10 @@ public class ChooseCategory extends AppCompatActivity implements View.OnClickLis
     }
 
     private void saveCategory(int categoryIndex) {
-        SharedPreferences sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("Game", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("categoryIndex", categoryIndex);
         editor.commit();
-
     }
 
 

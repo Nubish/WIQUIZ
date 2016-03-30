@@ -1,8 +1,10 @@
 package com.example.android.wiquiz;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,17 +36,17 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.buttonPlay:
+            case R.id.buttonPlay: {
                 startActivity(new Intent(this, ChooseCategory.class));
                 break;
-
-            case R.id.buttonQuit:
+            }
+            case R.id.buttonQuit: {
                 dialogBox();
                 break;
-
-
+            }
         }
     }
+
 
     public void dialogBox() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

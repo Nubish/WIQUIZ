@@ -128,25 +128,69 @@
       "Question": [
         {
           "QuestionId": "3001",
-          "Problem": "Who",
+          "Problem": "Who is popularly known as 'Father of Indian Cinema'?",
           "AnswerArray": [
-            "ManMohan",
-            "Sonia",
-            "Rahul",
-            "Modi"
+            "Dadasaheb Phalke",
+            "V. Shantaram",
+            "Ardeshir Irani",
+            "Kidar Sharma"
           ],
-          "CorrectAnswer": "Modi"
+          "CorrectAnswer": "Dadasaheb Phalke"
         },
         {
           "QuestionId": "3002",
-          "Problem": "Who",
+          "Problem": "Which of these movies is not directed by V. Shantaram?",
           "AnswerArray": [
-            "ManMohan",
-            "Sonia",
-            "Rahul",
-            "Modi"
+            "Jhanak Jhanak Payal Baaje",
+            "Do Ankhen Barah Haath",
+            "Navrang",
+            "Razia Sultan"
           ],
-          "CorrectAnswer": "Modi"
+          "CorrectAnswer": "Razia Sultan"
+        },
+        {
+          "QuestionId": "3003",
+          "Problem": "Which actress made her debut along with Raj Kapoor with film 'Neel Kamal'?",
+          "AnswerArray": [
+            "Madhubala",
+            "Nargis",
+            "Vyjayanthimala",
+            "Meena Kumari"
+          ],
+          "CorrectAnswer": "Madhubala"
+        },
+        {
+          "QuestionId": "3004",
+          "Problem": "Which Indian actor is known as 'Tragedy King'?",
+          "AnswerArray": [
+            "Sanjeev Kumar",
+            "Guru Dutt",
+            "Amitabh Bachchan",
+            "Dilip Kumar"
+          ],
+          "CorrectAnswer": "Dilip Kumar"
+        },
+        {
+          "QuestionId": "3005",
+          "Problem": "Beautiful actress Madhubala was married to ?",
+          "AnswerArray": [
+            "Raj Kapoor",
+            "Dilip Kumar",
+            "Premnath",
+            "Kishore Kumar"
+          ],
+          "CorrectAnswer": "Kishore Kumar"
+        },
+        {
+          "QuestionId": "3006",
+          "Problem": "Rajesh Khanna owned the title 'First Superstar' of Indian cinema after how many consecutive solo hit movies?",
+          "AnswerArray": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "CorrectAnswer": "15"
         }
       ]
     },
