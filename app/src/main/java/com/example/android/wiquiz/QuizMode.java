@@ -3,6 +3,7 @@
 package com.example.android.wiquiz;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,6 +20,7 @@ import static com.example.android.wiquiz.GetRandomNumberFromRange.getRandom;
 
 public class QuizMode extends AppCompatActivity {
 
+    private static final int DEFAULT_CATEGORY=getRandom(0,4);
     private Context context;
     public TextView question;
     private RecyclerView recyclerView;
@@ -54,17 +56,21 @@ public class QuizMode extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        int r=getRandom(0,5);
-        String categoryString="1";
-        int category=Integer.parseInt(categoryString);
 
+        int category = getCategory();
 
         gson = new Gson();
         responseobj = gson.fromJson(data, Response.class);
         //answers=responseobj.getCategoriesArray().get(0).getQuestion().get(0).getAnswerArray();
         //recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj));
-        recyclerView.setAdapter(new CustomQuizAdapter(context,responseobj.getCategoriesArray().get(category),category));
+        recyclerView.setAdapter(new CustomQuizAdapter(context, responseobj.getCategoriesArray().get(category), category));
 
+    }
+
+    private int getCategory() {
+        SharedPreferences sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE);
+        int category = sharedPreferences.getInt("categoryIndex",DEFAULT_CATEGORY);
+        return category;
     }
 
     public void setQuestion(String ques) {

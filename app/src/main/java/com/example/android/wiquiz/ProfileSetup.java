@@ -30,6 +30,14 @@ public class ProfileSetup extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.button11) {
+            saveData();
+        }
+    }
+
     private void saveData() {
 
         String name = nameEditText.getText().toString();
@@ -37,20 +45,13 @@ public class ProfileSetup extends AppCompatActivity implements View.OnClickListe
         if (name.equals("")) {
             Toast.makeText(this, "Please enter your name.", Toast.LENGTH_LONG).show();
         } else {
-            SharedPreferences sharedPreferences = getSharedPreferences("nameData", Context.MODE_PRIVATE);
+            SharedPreferences sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("userName", nameEditText.getText().toString());
             editor.commit();
             Toast.makeText(this, "Profile Created", Toast.LENGTH_SHORT).show();
-            Intent intent= new Intent(ProfileSetup.this,MainMenu.class);
+            Intent intent = new Intent(ProfileSetup.this, MainMenu.class);
             startActivity(intent);
-        }
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.button11) {
-            saveData();
         }
     }
 }

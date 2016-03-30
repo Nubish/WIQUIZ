@@ -18,6 +18,7 @@ import static com.example.android.wiquiz.GetRandomNumberFromRange.getRandom;
  */
 public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.CustomViewholder> {
 
+    private int randomQuestion;
     private Context context;
     private Response.CategoriesArray responseCategoriesArray;
     private int category;
@@ -26,6 +27,9 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
         this.context = context;
         this.responseCategoriesArray = responseCategoriesArray;
         this.category=category;
+        this.randomQuestion=getRandom(1, this.responseCategoriesArray.getQuestion().size());
+        Log.d("size",""+randomQuestion);
+
     }
 
     @Override
@@ -36,9 +40,6 @@ public class CustomQuizAdapter extends RecyclerView.Adapter<CustomQuizAdapter.Cu
 
     @Override
     public void onBindViewHolder(final CustomViewholder holder, int position) {
-
-        int randomQuestion=getRandom(1, responseCategoriesArray.getQuestion().size());
-        Log.d("size",""+randomQuestion);
 
         String ques = responseCategoriesArray.getQuestion().get(randomQuestion).getProblem();
         final String correct = responseCategoriesArray.getQuestion().get(randomQuestion).getCorrectAnswer();
