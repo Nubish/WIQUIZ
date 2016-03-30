@@ -20,7 +20,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".MainMenu" />
         <activity android:name=".ChooseCategory"
-                  android:label="Select Category"/>
+            android:label="Select Category" />
     </application>
 
 </manifest>
