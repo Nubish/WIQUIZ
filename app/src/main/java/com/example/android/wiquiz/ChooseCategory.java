@@ -30,6 +30,7 @@ public class ChooseCategory extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_choose_category);
 
         instantiate();
+        Score.resetScore(this);
 
         randomButton.setOnClickListener(this);
         gkButton.setOnClickListener(this);
@@ -81,6 +82,7 @@ public class ChooseCategory extends AppCompatActivity implements View.OnClickLis
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("categoryIndex", categoryIndex);
         editor.commit();
+        Log.d("game",""+categoryIndex);
     }
 
 

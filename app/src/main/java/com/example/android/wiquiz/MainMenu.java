@@ -38,6 +38,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.buttonPlay: {
                 startActivity(new Intent(this, ChooseCategory.class));
+
                 break;
             }
             case R.id.buttonQuit: {
