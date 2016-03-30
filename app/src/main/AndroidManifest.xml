@@ -19,8 +19,10 @@
         <activity android:name=".QuizMode" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MainMenu" />
-        <activity android:name=".ChooseCategory"
+        <activity
+            android:name=".ChooseCategory"
             android:label="Select Category" />
+        <activity android:name=".ShowScore"></activity>
     </application>
 
 </manifest>
