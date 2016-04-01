@@ -64,6 +64,7 @@ public class EditProfile extends AppCompatActivity implements View.OnClickListen
             editor.putString("userName", name);
             editor.commit();
             Toast.makeText(this, "Changes Saved", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,MainMenu.class));
 
         }
 

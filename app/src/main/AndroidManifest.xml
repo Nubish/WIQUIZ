@@ -29,27 +29,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfileSetup" />
+        <activity android:name=".ProfileSetup"
+            android:label="Profile Setup"/>
         <activity android:name=".QuizMode" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".MainMenu" />
+        <activity android:name=".MainMenu"
+            android:label="Menu"/>
         <activity
             android:name=".ChooseCategory"
             android:label="Select Category" />
-        <activity android:name=".ShowScore" />
+        <activity android:name=".ShowScore"
+            android:label="Score"/>
         <activity
             android:name=".WiFiDirectActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".AddCategory"/>
-        <activity android:name=".EditProfile"/>
+        <activity android:name=".AddCategory"
+            android:label="Add Category"/>
+        <activity android:name=".EditProfile"
+            android:label="Edit Profile"/>
 
         <service
             android:name=".FileTransferService"
             android:enabled="true" />
 
-        <activity android:name=".SelectMode"></activity>
+        <activity android:name=".SelectMode"
+            android:label="Select Mode"></activity>
     </application>
 
 </manifest>

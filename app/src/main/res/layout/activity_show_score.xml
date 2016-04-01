@@ -14,6 +14,8 @@
         android:layout_height="wrap_content"
         android:textColor="#b9f6ca"
         android:text="YOUR SCORE"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:textSize="35sp"
         android:id="@+id/textview13"/>
     <TextView
@@ -21,7 +23,8 @@
         android:layout_height="wrap_content"
         android:textSize="35sp"
         android:textColor="#00c853"
-        android:text="9/10"
+        android:text="9"
+        android:paddingLeft="20dp"
         android:id="@+id/textviewYourScore"
         android:layout_below="@+id/textview13"
         android:layout_alignParentLeft="true"
@@ -32,6 +35,7 @@
         android:text="TRY AGAIN"
         android:background="#99d3d3d3"
         android:id="@+id/buttonTryAgain"
+
         android:layout_above="@+id/buttonQuit"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -54,6 +58,7 @@
         android:textSize="35sp"
         android:textColor="#82b1ff"
         android:layout_above="@+id/textViewHighScore"
+        android:paddingBottom="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -61,6 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10"
+        android:paddingLeft="20dp"
         android:id="@+id/textViewHighScore"
         android:textSize="35sp"
         android:textColor="#2962ff"

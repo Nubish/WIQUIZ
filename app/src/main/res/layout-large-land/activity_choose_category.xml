@@ -35,7 +35,7 @@
         android:padding="15dp"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
-        android:layout_alignTop="@+id/buttonHistory"
+        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/buttonRandom"
         android:layout_alignStart="@+id/buttonRandom" />
 
@@ -48,10 +48,9 @@
         android:padding="15dp"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
-        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/buttonHistory"
         android:layout_alignLeft="@+id/buttonGk"
-        android:layout_alignStart="@+id/buttonGk"
-        android:layout_marginBottom="55dp" />
+        android:layout_alignStart="@+id/buttonGk" />
 
     <Button
         android:id="@+id/buttonEntertainment"
@@ -63,10 +62,9 @@
         android:padding="15dp"
         android:background="#99d3d3d3"
         android:paddingBottom="5dp"
-        android:layout_marginTop="80dp"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/buttonHistory"
-        android:layout_alignStart="@+id/buttonHistory" />
+        android:layout_alignLeft="@+id/buttonSci_Tech"
+        android:layout_alignStart="@+id/buttonSci_Tech" />
 
     <Button
         android:id="@+id/buttonHistory"
@@ -91,9 +89,9 @@
         android:padding="15dp"
         android:textColor="#FFFFFF"
         android:background="#99d3d3d3"
-        android:layout_marginRight="89dp"
-        android:layout_marginEnd="89dp"
-        android:layout_alignTop="@+id/buttonSports"
+        android:layout_marginRight="102dp"
+        android:layout_marginEnd="102dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

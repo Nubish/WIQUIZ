@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:text="@string/WI_QUIZ"
         android:id="@+id/dd"
-        android:textColor="#FFF"
         android:textSize="180sp"
         ></TextView>
 
